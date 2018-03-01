@@ -1,4 +1,4 @@
- button,
+        button,
         div,
         form,
         input {
@@ -16,11 +16,6 @@
             font-size: 80px;
         }
 
-        /* .container {
-            display: inline-block;
-
-        } */
-
         form {
             /* margin-left: 100px; */
             text-align: center;
@@ -30,26 +25,16 @@
 
         #buttons-view {
             text-align: center;
-           
-
         }
-
-        /* sticker {
-            display: inline-block;
-        } */
 
         .container>div {
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid black;
             text-align: center;
             font-size: 30px; 
-           
-
+        
         }
-        /* img{
-            display: inline-block;
-
-        } */
+        
         /* sticker buttons */
         .sticker-btn{
             font-size: 20px;
@@ -61,3 +46,7 @@
             font-size: 20px;
 
         }
+        #stickers-view {
+            font-size: 20px;
+        }
+        

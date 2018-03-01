@@ -22,14 +22,59 @@
             background-color: rgb(7, 7, 49);
             color: white;
             height: 100px;
-            padding-top: 30px;
+            padding-top: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+            font-size: 80px;
         }
-        
-        .container{
+
+        /* .container {
             display: inline-block;
 
+        } */
+
+        form {
+            /* margin-left: 100px; */
+            text-align: center;
+            font-size: 15px;
+
         }
-        
+
+        #buttons-view {
+            text-align: center;
+           
+
+        }
+
+        /* sticker {
+            display: inline-block;
+        } */
+
+        .container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 30px; 
+           
+
+        }
+        /* img{
+            display: inline-block;
+
+        } */
+        /* sticker buttons */
+        .sticker-btn{
+            font-size: 20px;
+            background-color: lightgrey;
+
+        }
+        /* submit button */
+        #add-sticker{
+            font-size: 20px;
+
+        }
+
+
     </style>
 </head>
 
@@ -50,7 +95,7 @@
             <br>
 
             <!-- Button triggers new sticker to be added -->
-            <input id="add-sticker" type="submit" value="Pick a sticker">
+            <input id="add-sticker" type="submit" value="Search">
 
         </form>
 
@@ -115,7 +160,7 @@
             });
         }
 
-        
+
         $(document).on("click", ".image", function () {
             var state = $(this).attr('data-state');
             if (state == 'still') {
@@ -127,7 +172,7 @@
             }
         });
 
-        
+
 
 
 
@@ -156,7 +201,7 @@
             }
         }
 
-        // This function handles events where a movie button is clicked
+        // This function handles events when a sticker button is clicked
         $("#add-sticker").on("click", function (event) {
             event.preventDefault();
             // This line grabs the input from the textbox
